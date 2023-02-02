@@ -8,6 +8,9 @@ export const createNoteSchema = z.object({
     required_error: "Content is required",
   }),
   category: z.string().optional(),
+  // category: z.string({
+  //   required_error: "category is required",
+  // }),
   published: z.boolean().optional(),
 });
 
